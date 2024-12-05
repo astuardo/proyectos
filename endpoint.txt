@@ -1,0 +1,53 @@
+****** Clientes ******
+
+http://localhost:8080/getCliente/{id}
+http://localhost:8080/traerClientes
+http://localhost:8080/addCliente
+http://localhost:8080/updCliente
+http://localhost:8080/delCliente/{id}
+
+****** Productos ******
+
+http://localhost:8080/getProducto/{id}
+http://localhost:8080/traeProductos
+http://localhost:8080/addProducto
+http://localhost:8080/updProducto
+http://localhost:8080/delProducto/{id}
+http://localhost:8080/resProducto/
+
+****** Empresas ******
+
+http://localhost:8080/getEmpresa/{id}
+http://localhost:8080/traeEmpresas
+http://localhost:8080/addEmpresa
+http://localhost:8080/updEmpresa
+http://localhost:8080/delEmpresa/{id}
+
+****** Facturas ******
+
+http://localhost:8080/factura/{facturaId}
+http://localhost:8080/factura-producto-registro
+
+****** JSON ******
+
+{
+  "clienteId": 1,
+  "nombre": "Alfredo",
+  "apellido": "Stuardo",
+  "dni": 15555555,
+  "direccion": "Blablabla",
+  "productos": [
+    {
+      "productoId": 1,
+      "cantidad": 7
+    },
+    {
+      "productoId": 2,
+      "cantidad": 50
+    },
+    {
+      "productoId": 3,
+      "cantidad": 2
+    }
+  ]
+}

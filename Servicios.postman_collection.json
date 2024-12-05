@@ -1,0 +1,450 @@
+{
+	"info": {
+		"_postman_id": "e3fd59f8-bda1-48b7-883c-c70d60a1f461",
+		"name": "Servicios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Clientes",
+			"item": [
+				{
+					"name": "getCliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/getCliente/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"getCliente",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetListaClientes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/traerClientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"traerClientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addCliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Prueba\",\r\n    \"apellido\": \"Prueba2\",\r\n    \"dni\": \"111111-1\",\r\n    \"direccion\": \"Prueba 123\",\r\n    \"ciudad\": \"Prueba\",\r\n    \"pais\": \"Prueba\",\r\n    \"fnacimiento\": \"2022-01-01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/addCliente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"addCliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdCliente",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"7\",\r\n    \"nombre\": \"PruebaPrueba\",\r\n    \"apellido\": \"Prueba2\",\r\n    \"dni\": \"111111-1\",\r\n    \"direccion\": \"Prueba 123\",\r\n    \"ciudad\": \"Prueba\",\r\n    \"pais\": \"Prueba\",\r\n    \"fnacimiento\": \"2022-01-01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/updCliente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"updCliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delCliente",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/delCliente/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"delCliente",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Productos",
+			"item": [
+				{
+					"name": "getProducto",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/getProducto/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"getProducto",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetListaProducto",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/traeProductos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"traeProductos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addProducto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Prueba\",\r\n    \"descripcion\": \"Prueba\",\r\n    \"precio\": 1,\r\n    \"stock\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/addProducto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"addProducto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdProducto",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 11,\r\n    \"nombre\": \"PruebaProducto\",\r\n    \"descripcion\": \"ProductoPrueba\",\r\n    \"precio\": 10,\r\n    \"stock\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/updProducto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"updProducto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delProducto",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/delProducto/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"delProducto",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "resProducto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/resProducto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"resProducto"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Empresas",
+			"item": [
+				{
+					"name": "getEmpresa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/getEmpresa/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"getEmpresa",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetListaEmpresa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/traeEmpresas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"traeEmpresas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addEmpresa",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Prueba Technology\",\r\n    \"rubro\": \"Prueba Venta de Insumos\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/addEmpresa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"addEmpresa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdEmpresa",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"nombre\": \"Prueba2 Technology\",\r\n    \"rubro\": \"Prueba2 Venta de Insumos\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/updEmpresa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"updEmpresa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delEmpresa",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/delEmpresa/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"delEmpresa",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Facturas",
+			"item": [
+				{
+					"name": "CreaFactura",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"clienteId\": 1,\r\n  \"nombre\": \"Alfredo\",\r\n  \"apellido\": \"Stuardo\",\r\n  \"dni\": 15555555,\r\n  \"direccion\": \"Blablabla\",\r\n  \"productos\": [\r\n    {\r\n      \"productoId\": 1,\r\n      \"cantidad\": 7\r\n    },\r\n    {\r\n      \"productoId\": 2,\r\n      \"cantidad\": 50\r\n    },\r\n    {\r\n      \"productoId\": 3,\r\n      \"cantidad\": 2\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/factura-producto-registro",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"factura-producto-registro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetFactura",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/factura/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"factura",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
